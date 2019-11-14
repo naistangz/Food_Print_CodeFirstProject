@@ -1,0 +1,807 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@media screen and (max-width: 600px) {
+
+/* column */
+  .column {
+    width: 100%;
+  }
+}
+
+/*header*/
+.header{
+  width: 100%;
+  height: 65px;
+  display: block;
+  background-color: Black;
+}
+
+.inner_header{
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 200;
+  padding-left: 20px;
+}
+
+.logo_container h1 span{
+  font-weight: 800;
+}
+
+.navigation{
+  float: right;
+  height: 100%;
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 15px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 17px;
+}
+/*Grid pictures */
+
+/*introductory paragraphs*/
+
+
+.first{
+  color: white;
+  text-align:center;
+}
+
+.about{
+  color: white;
+}
+
+.about a{
+  color: white;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+         transition: all 1s ease;
+}
+
+.about a:hover {
+  -webkit-filter: blur(1px);
+}
+
+#photos {
+  line-height: 5;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   90px;
+  -moz-column-count:    5;
+  -moz-column-gap:      90px;
+  column-count:         5;
+  column-gap:           90px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden; /* the property defines whether or not the back
+  face of element should be visible when facing user */
+}
+
+
+#photos img {
+  /*Responsive images automatically adjusts to fit the size
+  of the screen e.g when resizing browser window, the image scales up or down
+  but never scales up to be larger than its original size*/
+  max-width: 500% !important;
+  height: auto !important;
+}
+
+/* Below is link on how to create hover effect on image
+--https://miketricking.github.io/bootstrap-image-hover/*/
+
+
+.loader {
+  position: fixed;
+  z-index: 99; /*to ensure that it is on top, it won't scroll down when you scroll*/
+  left: 0; /* top left part of the window */
+  top: 0;
+  height: 100%; /* full width, full height */
+  width: 100%;
+  display: flex;
+  justify-content:center;/* centers it horizontally */
+  align-items: center;/* centers it vertically */
+}
+
+.loader > img {
+  width: 150px;
+}
+
+.loader.hidden {
+  animation: fadeOut 3s;
+  animation-fill-mode: forwards; /*makes sure that once animation is done, opacity and visibility maintain themselves*/
+}
+
+/*makes the loader disappear*/
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+}
+
+.beef {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+
+.beef:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+
+.turkey {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.turkey:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.cheese {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.cheese:hover{
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.almonds {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+
+.almonds:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.avocado {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.avocado:hover{
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.lamb {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.lamb:hover{
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+
+
+
+/*social media section*/
+
+#social {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#social ul {
+  text-align: center;
+  padding-left: 0px;
+  margin: 0 auto;
+}
+
+#social li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+/** Facebook **/
+
+.facebook {
+  width: 50px;
+  height: 50px;
+}
+
+.facebook .border {
+  background: transparent;
+  outline: none;
+  color:rgba(255,255,255, 0.3);
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  border: 2px solid rgba(255,255,255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.facebook .border:hover {
+  background: #3b5998;
+  border-color: #436aaf;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-facebook {
+  font-size: 25px;
+}
+
+/** Twitter **/
+
+.twitter {
+  width: 50px;
+  height: 50px;
+}
+
+.twitter .border {
+  background: transparent;
+  outline: none;
+  color:rgba(255,255,255, 0.3);
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  border: 2px solid rgba(255,255,255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.twitter .border:hover {
+  background: #00aced;
+  border-color: #72c6e6;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-twitter {
+  font-size: 25px;
+}
+
+/** Instagram **/
+
+.instagram {
+  width: 50px;
+  height: 50px;
+}
+
+.instagram .border {
+  background: transparent;
+  outline: none;
+  color:rgba(255,255,255, 0.3);
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  border: 2px solid rgba(255,255,255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.instagram .border:hover {
+  background: #517fa4;
+  border-color: #7495af;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-instagram {
+  font-size: 25px;
+}
+
+/** youtube **/
+
+.youtube .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255,255,255, 0.3);
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  border: 2px solid rgba(255,255,255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.youtube .border:hover {
+  background: #d71e18;
+  border-color:#fefefa;
+  color: #f8f8f8;
+  transform: scale(1.2);
+}
+
+.fa.fa-youtube {
+  font-size: 25px;
+}
+
+.github .border {
+  background: transparent;
+  outline: none;
+  color:rgba(255,255,255, 0.3);
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  border: 2px solid rgba(255,255,255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.github .border:hover {
+  background: #333;
+  border-color:#808080;
+  color: rgba(255,255,255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-github {
+  font-size: 25px;
+}
+
+#social ul li {
+  transition: ease .3s;
+}
+
+#social ul:hover > li {
+  opacity: 0.5;
+}
+
+#social ul:hover > li:hover {
+  opacity: 1;
+}
+
+.social-footer {
+  position: fixed; bottom: 10px;
+  bottom: 15px;
+  width: 100%;
+  padding: 1 20px;
+}
+
+/*Linda code*/
+/*Linda code*/
+/*Linda code*/
+/*Linda code*/
+/*Linda code*/ /*Linda code*/
+
+
+/*applied to entire html*/
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial Black;
+  color: white;
+}
+
+/*body*https://thirtyeightvisuals.com/blog/half-background-squarespace-index/ half screen background!!!!!!*/
+body {
+  background: #141F24;
+  background: radial-gradient(circle, rgba(25,46,21,0.9878326330532213) 8%, rgba(20,31,36,1) 100%);
+  position:fixed;
+  font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 60%;
+  left: 50%;
+  width:30em;
+  height:18em;
+  margin-top: -9em;
+  margin-left: -15em;
+}
+
+.click_icon {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  align: center;
+  z-index: 0;
+}
+
+
+/*header and inner header*/
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  background-color: Black;
+  vertical-align: middle;
+}
+
+.inner_header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 200;
+  padding-left: 20px;
+}
+
+.logo_container h1 span{
+  font-weight: 800;
+}
+
+/*navigation bar*/
+.navigation{
+  float: right;
+  height: 100%;
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 15px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+/*introductory paragraphs*/
+.foodprint_heading {
+align: center;
+margin-top: -32px;
+}
+
+.first {
+  color: white;
+  text-align:center;
+}
+
+.about{
+  color: white;
+}
+
+.about a{
+  color: white;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+         transition: all 1s ease;
+}
+
+.about a:hover {
+  -webkit-filter: blur(1px);
+}
+
+/*footer and social media icons*/
+.footer{
+  width: 100%;
+  height: 50px;
+  background-color: Black;
+  display: flex;
+  position: fixed;
+  padding-top: 8pt;
+  bottom: 0;
+  font-weight: 200;
+}
+
+.websitename h1{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+  margin: 0 auto;
+  bottom: 5;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 6pt;
+}
+
+.websitename h1 span{
+  font-weight: 800;
+}
+
+.indented p{
+  display: table;
+  color: white;
+  padding-left: 10pt;
+  padding-right: 50pt;
+  padding-top: 13pt;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+/*CSS for the About page*/
+
+
+/*header*/
+.about_header{
+  width: 100%;
+  height: 65px;
+  display: block;
+  background-color: Black;
+}
+
+.about_logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.about_logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 200;
+  padding-left: 20px;
+}
+
+.about_h1 span{
+  font-weight: 800;
+}
+
+/*navigation bar*/
+.about_navigation{
+  position: right;
+  height: 100%;
+}
+
+.about_navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 15px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.about_navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+/*heading*/
+
+.about_heading{
+  color: black;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.sign-up{
+  padding-left: 40px;
+  color: black;
+}
+
+
+/*form*/
+
+form{
+  text-align: justify-content;
+}
+
+label{
+  color: black;
+  font-size: 16px;
+}
+
+/*footer*/
+
+.about_footer{
+  width: 100%;
+  height: 50px;
+  background-color: Black;
+  display: flex;
+  position: fixed;
+  padding-top: 8pt;
+  bottom: 0;
+  font-weight: 200;
+}
+
+.about_websitename h1{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+  margin: 0 auto;
+  bottom: 5;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 6pt;
+}
+
+.about_websitename h1 span{
+  font-weight: 800;
+}
+
+.about_indented p{
+  display: table;
+  color: white;
+  padding-left: 10pt;
+  padding-right: 50pt;
+  padding-top: 13pt;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+
+
+
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+/*CSS for the graphics page*/
+
+/*header*/
+.graphics_header{
+  width: 100%;
+  height: 65px;
+  display: block;
+  background-color: Black;
+}
+
+.graphics_logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.graphics_logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 200;
+  padding-left: 20px;
+}
+
+.graphics_h1 span{
+  font-weight: 800;
+}
+
+/*navigation bar*/
+.graphics_navigation{
+  float: right;
+  height: 100%;
+}
+
+.graphics_navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 15px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.graphics_navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+/*footer*/
+.graphics_footer{
+  width: 100%;
+  height: 50px;
+  background-color: Black;
+  display: flex;
+  position: fixed;
+  padding-top: 8pt;
+  bottom: 0;
+  font-weight: 200;
+}
+
+.graphics_websitename h1{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+  margin: 0 auto;
+  bottom: 5;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 6pt;
+}
+
+.graphics_websitename h1 span{
+  font-weight: 800;
+}
+
+.graphics_indented p{
+  display: table;
+  color: white;
+  padding-left: 10pt;
+  padding-right: 50pt;
+  padding-top: 13pt;
+  font-size: 12px;
+  font-weight: 100;
+}
